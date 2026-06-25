@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+
     <link rel="icon" href="/assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>    
+    <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -21,18 +23,50 @@
         </label>
 
         <ul class="menu-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
     <div class="container">
-        <h1>PORTFOLIO</h1>
+        <div class="hero-section">
+            <div class="avatar-wrapper">
+                <img class="cat" src="assets/images/cat-meme.gif" alt="cat-meme">
+                <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+            </div>
+            
+            <div class="name-section">
+                <h2>ALEX DINH 🍂</h2>
+                <h5>@muathu.tokyo.dev</h5>
+            </div>
 
+            <div class="personal-info">
+                <h5><span style="color: #ff0000;">•</span> Dinh Nhat Huy</h5>
+                <h5><span style="color:#ffbb00;">•</span> 09.04.2006</h5>
+                <h5><span style="color:#66ff00;">•</span> Full-stack Developer</h5>
+            </div>
+
+            <div class="personal-contact">
+                <div style="display: flex; gap: .2em;">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h5>Saigon, Vietnam</h5>
+                </div>
+                <div style="display: flex; gap: .2em;">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h5>20 years old</h5>
+                </div> 
+            </div>
+
+            <button type="button">
+                <a href="/assets/docs/random-resume.png" download="resume.png" id="get-resume">
+                    RESUME ▶
+                </a>
+            </button>
+        </div>
     </div>
 
 </body>

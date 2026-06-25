@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'New Eridu';
-    src: url(/assets/fonts/new-eridu.ttf);
+    src: url('../fonts/new-eridu.ttf');
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     color: #fff;
     font-family: 'New Eridu', Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url('/assets/images/background-img.png');
+    background-image: url('../images/background-img.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

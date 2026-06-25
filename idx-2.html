@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar Pure CSS</title>
+    <style>
+        /* ==========================================================================
+   CÀI ĐẶT CHUNG
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Định dạng thanh Navbar tổng */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Ẩn cái checkbox mặc định đi, không cho người dùng thấy */
+.menu-checkbox {
+    display: none;
+}
+
+/* ==========================================================================
+   MÀN HÌNH MOBILE (Mặc định)
+   ========================================================================== */
+
+/* Thiết kế nút 3 gạch (Hamburger) */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-btn .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s; /* Tạo hiệu ứng mượt mà nếu cần nâng cấp */
+}
+
+/* Thiết kế Menu chữ trên Mobile: ẨN ĐI và xếp dọc */
+.menu-links {
+    display: none; /* Mặc định là ẨN */
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 100%; /* Nằm ngay sát dưới thanh navbar */
+    left: 0;
+    list-style: none;
+}
+
+.menu-links li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.menu-links li a:hover {
+    background-color: #555;
+}
+
+/* ẢO THUẬT: Khi Checkbox được CHECK, hiển thị Menu chữ dạng Flexbox cột */
+.menu-checkbox:checked ~ .menu-links {
+    display: flex;
+}
+
+
+/* ==========================================================================
+   MÀN HÌNH LAPTOP/DESKTOP (Từ 768px trở lên)
+   ========================================================================== */
+@media (min-width: 768px) {
+    /* 1. Ẩn nút 3 gạch đi vì màn hình lớn không cần nữa */
+    .hamburger-btn {
+        display: none;
+    }
+
+    /* 2. Hiện lại Menu chữ và xoay ngang ra */
+    .menu-links {
+        display: flex;          /* Bắt buộc phải HIỆN */
+        flex-direction: row;    /* Xoay thành HÀNG NGANG */
+        position: static;       /* Trả về vị trí bình thường trên thanh navbar */
+        width: auto;            /* Không chiếm full màn hình nữa */
+        background-color: transparent; /* Bỏ màu nền riêng của mobile */
+    }
+
+    .menu-links li a {
+        border-bottom: none;    /* Bỏ gạch chân */
+        padding: 10px 15px;
+    }
+
+    .menu-links li a:hover {
+        background-color: #555;
+        border-radius: 4px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyBrand</div>
+
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+
+        <label for="menu-checkbox" class="hamburger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="menu-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

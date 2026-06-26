@@ -66,6 +66,6 @@ cd personal-portfolio
 ```
 <hr>
 <h4>✨ Support my project</h4>
-  <a href="paypal.me/Huylorddd/5usd">
+  <a href="https://paypal.me/Huylorddd/5usd">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
   </a>

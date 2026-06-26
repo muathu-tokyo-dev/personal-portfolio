@@ -26,6 +26,24 @@ body {
 
 
 /* Layout */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+.loading-screen h1 {
+    font-size: 2.5rem;
+}
+
 .navbar {
     position: -webkit-sticky;
     position: sticky;

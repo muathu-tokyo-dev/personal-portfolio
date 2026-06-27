@@ -314,6 +314,7 @@ a {
 }
 .social-media-grid .email img {
     width: 4rem;
+    z-index: 999;
 }
 .social-media-grid .email:hover {
     border-color: #ff0000;

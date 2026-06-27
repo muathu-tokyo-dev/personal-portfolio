@@ -5,6 +5,7 @@
 
 * {
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 html,body {
@@ -276,11 +277,21 @@ a {
 .social-media-grid .github {
     background-color: #000;
     border-color: #000;
+    grid-column: span 2;
 }
 
 .social-media-grid .linkedin {
     background-color: #0A66C2 ;
     border-color: #0A66C2 ;
+}
+
+.social-media-grid .leetcode {
+    background-color: #313131 ;
+    border-color: #313131 ;
+}
+.social-media-grid .leetcode img {
+    width: 4rem;
+    z-index: 999;
 }
 
 .social-media-grid .email {
@@ -291,15 +302,21 @@ a {
     width: 4rem;
     z-index: 999;
 }
-
 .social-media-grid .youtube {
     background-color: #ff0000 ;
     border-color: #ff0000;
 }
-
 .social-media-grid .discord {
     background-color: #5865f2;
     border-color: #5865f2;
+}
+.social-media-grid .htb {
+    background-color: #1A2332;
+    border-color: #1A2332;
+}
+.social-media-grid .htb img {
+    width: 6rem;
+    z-index: 999;
 }
 
 @media (hover: hover) {
@@ -308,13 +325,12 @@ a {
         opacity: 0.4;
         cursor: pointer;
         transform: scale(0.94);
-        border-color: #ffffff48;
         
     }
     .social-media-grid .span:hover,
     .social-media-grid .span-2:hover {
         opacity: 1;
-        border: 2px solid #ffde00;
+        border: 2px solid #fff;
         cursor: pointer;
         transform: scale(1.3);
         position: relative;
@@ -322,9 +338,11 @@ a {
     }
     .social-media-grid .github:hover { border-color: #fff; }
     .social-media-grid .linkedin:hover { border-color: #fff; }
-    .social-media-grid .email:hover { border-color: #ff0000; }
+    .social-media-grid .leetcode:hover { border-color: #ffa116; }
+    .social-media-grid .email:hover { border-color: #ffa116; }
     .social-media-grid .youtube:hover { border-color: #fff; }
     .social-media-grid .discord:hover { border-color: #fff; }
+    .social-media-grid .htb:hover { border-color: #2bff00; }
 }
 
 /* Desktop */
@@ -360,4 +378,10 @@ a {
         font-size: 2.5rem;
     }
 
+    .social-media-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .social-media-grid .github { grid-column: span 1; }
 }

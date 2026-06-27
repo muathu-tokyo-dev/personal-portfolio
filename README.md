@@ -25,8 +25,18 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
 
 ## Demo 👀
 <p align="center">
-  <img width="1920" height="1080" alt="Screen Shot 2026-06-26 at 14 20 49" src="https://github.com/user-attachments/assets/90a0792e-b186-43c5-a83c-f7e70a6f0867" />
-
+  <div align="center">
+    <h3>❮ H O M E ❯</h3>
+    <img width="1920" height="1080" alt="Screen Shot 2026-06-26 at 14 20 49" src="https://github.com/user-attachments/assets/90a0792e-b186-43c5-a83c-f7e70a6f0867" />
+  </div>
+  
+  
+  <div align="center">
+    <h3>❮ C O N T A C T ❯</h3>
+    <img width="1920" height="1080" alt="Screen Shot 2026-06-27 at 21 34 20" src="https://github.com/user-attachments/assets/036ba5dd-d862-44ea-8c83-77509033050c" />
+  </div>
+  
+  
   ⬩➤ Live Demo: [<a href="https://muathu-tokyo-dev.github.io/personal-portfolio/">**CLICK HERE**</a>] 🔥
 </p>
 

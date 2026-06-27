@@ -24,6 +24,21 @@ body {
     background-size: cover;
 }
 
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.25rem;
+}
+h3 {
+    font-size: 2rem;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* Layout */
 .loading-screen {
@@ -70,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     max-width: 980px;
     margin: 4em auto;
     padding: 1.25em;
@@ -234,6 +250,89 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 1.5em;
+}
+
+.social-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.social-media-grid .span,
+.social-media-grid .span-2 {
+    display: flex;
+    min-height: 2rem;
+    border: 2px solid #fff;
+    padding: 4rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.social-media-grid:hover .span,
+.social-media-grid:hover .span-2 {
+    opacity: 0.4;
+    cursor: pointer;
+    transform: scale(0.94);
+    border-color: #ffffff48;
+    
+}
+
+.social-media-grid .span:hover,
+.social-media-grid .span-2:hover {
+    opacity: 1;
+    border: 2px solid #ffde00;
+    cursor: pointer;
+    transform: scale(1.3);
+    position: relative;
+    z-index: 10;
+}
+
+.social-media-grid .span-2 {
+    grid-column: span 2;
+}
+
+.social-media-grid .github {
+    background-color: #000;
+    border-color: #000;
+}
+.social-media-grid .github:hover {
+    border-color: #fff;
+}
+
+.social-media-grid .linkedin {
+    background-color: #0A66C2 ;
+    border-color: #0A66C2 ;
+}
+.social-media-grid .linkedin:hover {
+    border-color: #fff;
+}
+
+.social-media-grid .email {
+    background-color: #fff;
+    border-color: #fff;
+}
+.social-media-grid .email img {
+    width: 4rem;
+}
+.social-media-grid .email:hover {
+    border-color: #ff0000;
+}
+
+.social-media-grid .youtube {
+    background-color: #ff0000 ;
+    border-color: #ff0000;
+}
+.social-media-grid .youtube:hover {
+    border-color: #fff;
+}
+
+.social-media-grid .discord {
+    background-color: #5865f2;
+    border-color: #5865f2;
+}
+.social-media-grid .discord:hover {
+    border-color: #fff;
 }
 
 /* Desktop */

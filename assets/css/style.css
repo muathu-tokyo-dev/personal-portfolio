@@ -277,7 +277,6 @@ a {
 .social-media-grid .github {
     background-color: #000;
     border-color: #000;
-    grid-column: span 2;
 }
 
 .social-media-grid .linkedin {
@@ -285,14 +284,14 @@ a {
     border-color: #0A66C2 ;
 }
 
-.social-media-grid .leetcode {
-    background-color: #313131 ;
-    border-color: #313131 ;
+.social-media-grid .facebook {
+    background-color: #1877f2 ;
+    border-color: #1877f2 ;
 }
-.social-media-grid .leetcode img {
+/* .social-media-grid .leetcode img {
     width: 4rem;
     z-index: 999;
-}
+} */
 
 .social-media-grid .email {
     background-color: #fff;
@@ -315,7 +314,7 @@ a {
     border-color: #1A2332;
 }
 .social-media-grid .htb img {
-    width: 6rem;
+    width: 4rem;
     z-index: 999;
 }
 
@@ -338,8 +337,8 @@ a {
     }
     .social-media-grid .github:hover { border-color: #fff; }
     .social-media-grid .linkedin:hover { border-color: #fff; }
-    .social-media-grid .leetcode:hover { border-color: #ffa116; }
-    .social-media-grid .email:hover { border-color: #ffa116; }
+    .social-media-grid .facebook:hover { border-color: #fff; }
+    .social-media-grid .email:hover { border-color: #ff1212; }
     .social-media-grid .youtube:hover { border-color: #fff; }
     .social-media-grid .discord:hover { border-color: #fff; }
     .social-media-grid .htb:hover { border-color: #2bff00; }
@@ -383,5 +382,8 @@ a {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
-    .social-media-grid .github { grid-column: span 1; }
+
+    .linkedin {
+        grid-column: span 2;
+    }
 }

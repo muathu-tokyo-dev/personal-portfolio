@@ -2,6 +2,10 @@
     font-family: 'New Eridu';
     src: url('../fonts/new-eridu.ttf');
 }
+@font-face {
+    font-family: 'JetBrain Mono';
+    src: url('../fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
 
 * {
     font-size: 16px;
@@ -317,6 +321,23 @@ a {
     width: 4rem;
     z-index: 999;
 }
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'JetBrain Mono', Arial, Helvetica, sans-serif;
+}
+
+.introduction {
+    grid-column: span 4;
+}
+.introduction p {
+    background-color: #00000054;
+    border: 2px solid transparent;
+    border-radius: 15px;
+        padding: .5rem;
+}
+
 
 @media (hover: hover) {
     .social-media-grid:hover .span,

@@ -116,7 +116,7 @@ hr {
 
 
 /* Mobile (default) */
-
+/* PAGE: HOME */ 
 .hamburger-btn {
     display: flex;
     flex-direction: column;
@@ -244,6 +244,8 @@ hr {
     gap: 1.5em;
 }
 
+
+/* PAGE: CONTACT */ 
 .social-media-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,7 +310,33 @@ hr {
     width: 4rem;
     z-index: 999;
 }
+@media (hover: hover) {
+    .social-media-grid:hover .span,
+    .social-media-grid:hover .span-2 {
+        opacity: 0.4;
+        cursor: pointer;
+        transform: scale(0.94);
+        
+    }
+    .social-media-grid .span:hover,
+    .social-media-grid .span-2:hover {
+        opacity: 1;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transform: scale(1.3);
+        position: relative;
+        z-index: 10;
+    }
+    .social-media-grid .github:hover { border-color: #fff; }
+    .social-media-grid .linkedin:hover { border-color: #fff; }
+    .social-media-grid .facebook:hover { border-color: #fff; }
+    .social-media-grid .email:hover { border-color: #ff1212; }
+    .social-media-grid .youtube:hover { border-color: #fff; }
+    .social-media-grid .discord:hover { border-color: #fff; }
+    .social-media-grid .htb:hover { border-color: #2bff00; }
+}
 
+/* PAGE: ABOUT */ 
 .about-me-grid {
     margin-top: 1.5rem;
     display: flex;
@@ -385,7 +413,6 @@ hr {
     background-color: #00000050;
     transition: all 0.3s ease;
 }
-
 .icon-frame {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -395,31 +422,50 @@ hr {
     width: 5rem;
 }
 
-
-@media (hover: hover) {
-    .social-media-grid:hover .span,
-    .social-media-grid:hover .span-2 {
-        opacity: 0.4;
-        cursor: pointer;
-        transform: scale(0.94);
-        
-    }
-    .social-media-grid .span:hover,
-    .social-media-grid .span-2:hover {
-        opacity: 1;
-        border: 2px solid #fff;
-        cursor: pointer;
-        transform: scale(1.3);
-        position: relative;
-        z-index: 10;
-    }
-    .social-media-grid .github:hover { border-color: #fff; }
-    .social-media-grid .linkedin:hover { border-color: #fff; }
-    .social-media-grid .facebook:hover { border-color: #fff; }
-    .social-media-grid .email:hover { border-color: #ff1212; }
-    .social-media-grid .youtube:hover { border-color: #fff; }
-    .social-media-grid .discord:hover { border-color: #fff; }
-    .social-media-grid .htb:hover { border-color: #2bff00; }
+.about-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.project-carousel {
+    position: relative;
+    display: flex;
+    margin-top: -5rem;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+/* .project-carousel-btn {
+    display: none;
+    color: #fff;
+    background-color: green;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+} */
+.project-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 2rem 0;
+}
+.project-track::-webkit-scrollbar {
+    display: none;
+}
+.project-item {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: .75rem;
+    min-width: 100vw;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.project-item:hover {
+    position: relative;
+    border-color: #178be9;
+    z-index: 10;
+    transform: scale(1.05);
 }
 
 /* Desktop */
@@ -491,4 +537,13 @@ hr {
     .icon-frame {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .project-carousel-btn {
+        display: block;
+    }
+
+    .project-item {
+        min-width: 31.5vw;
+    }
+    
 }

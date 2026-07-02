@@ -1,4 +1,4 @@
-/* Page Loader */
+/* ## Page Loader */
 window.addEventListener('load', () => {
     const loadingScreen = document.getElementById('loading-screen');
 
@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     }
 });
 
-/* Donut */
+/* ## Donut */
 const preTag = document.getElementById("donut");
 
 let A = 0, B = 0;
@@ -47,5 +47,45 @@ function renderAsciiDonut() {
   }
   
   preTag.innerHTML = b.join("");
-}
+};
 setInterval(renderAsciiDonut, 64);
+
+
+/* ## Carousel handling */
+const track = document.getElementById('projectTrack');
+
+const original = track.innerHTML;
+track.innerHTML += original;
+
+let scrollSpeed = 1;
+let animationId;
+
+function autoScroll() {
+  track.scrollLeft += scrollSpeed;
+
+  if (track.scrollLeft >= track.scrollWidth / 2) {
+    track.scrollLeft -= track.scrollWidth / 2;
+  }
+
+  animationId = requestAnimationFrame(autoScroll);
+}
+
+requestAnimationFrame(autoScroll)
+
+/* For desktop */
+track.addEventListener('mouseenter', () => {
+  cancelAnimationFrame(animationId);
+});
+
+track.addEventListener('mouseleave', () => {
+  animationId = requestAnimationFrame(autoScroll);
+});
+
+/* For mobile */
+track.addEventListener('touchstart', () => {
+  cancelAnimationFrame(animationId);
+}, {passive: true});
+
+track.addEventListener('touchend', () => {
+  animationId = requestAnimationFrame(autoScroll);
+});

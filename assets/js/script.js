@@ -84,7 +84,7 @@ track.addEventListener('mouseleave', () => {
 /* For mobile */
 track.addEventListener('touchstart', () => {
   cancelAnimationFrame(animationId);
-}, {passive: true});
+});
 
 track.addEventListener('touchend', () => {
   animationId = requestAnimationFrame(autoScroll);

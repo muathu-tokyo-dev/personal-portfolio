@@ -32,18 +32,23 @@ body {
 /* Typography */
 h1 {
     font-size: 2.5rem;
+    margin: 0;
 }
 h2 {
     font-size: 2.25rem;
+    margin: 0;
 }
 h3 {
     font-size: 2rem;
+    margin: 0;
 }
 h4 {
     font-size: 1.75rem;
+    margin: 0;
 }
 h5 {
     font-size: 1.5rem;
+    margin: 0;
 }
 a {
     color: #fff;
@@ -412,7 +417,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px auto;
+    margin: 5px auto;
     padding: .75rem;
     border: 2px solid white;
     border-radius: 10px;
@@ -436,7 +441,7 @@ hr {
 .project-carousel {
     position: relative;
     display: flex;
-    margin-top: -8rem;
+    margin-top: -6rem;
     gap: 20px;
     align-items: center;
     width: 100%;
@@ -481,9 +486,49 @@ hr {
     color: #ffffff8c;
 }
 
+/* PAGE: Service */
+.service-display {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 20px;
+    font-family: 'JetBrain Mono', Arial, Helvetica, sans-serif;
+}
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: .75rem;
+    background-color: #00000056;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.service-item:hover {
+    border: 2px solid #04f03f;
+    transform: scale(1.2);
+}
+.service-item img {
+    filter: invert();
+    width: 10rem;
+}
+
+.service-item-front {
+    transition: all 0.3s ease;
+}
+.service-item-front:hover {
+    opacity: 0;
+}
+.service-item-back {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.service-item-back:hover {
+    opacity: 1;
+}
+
 
 /* Desktop */
-
 @media (min-width: 768px) {
 
     .navbar {
@@ -560,5 +605,8 @@ hr {
     .project-item {
         min-width: 31.5vw;
     }
-    
+ 
+    .service-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

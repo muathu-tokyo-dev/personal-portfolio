@@ -4,11 +4,11 @@ window.addEventListener('load', () => {
 
     if (loadingScreen) {
         loadingScreen.style.opacity = "0";
-        loadingScreen.style.pointerEvents = "none";
+        
     }
 });
 
-/* ## Donut */
+
 const preTag = document.getElementById("donut");
 
 let A = 0, B = 0;
@@ -88,4 +88,24 @@ track.addEventListener('touchstart', () => {
 
 track.addEventListener('touchend', () => {
   animationId = requestAnimationFrame(autoScroll);
+});
+
+
+
+/* ## Service Info */
+const serviceItems = document.querySelectorAll('.service-item');
+const serviceInfo = document.getElementById('service-info');
+
+
+/* For desktop */
+serviceItems.forEach(item => {
+
+  item.addEventListener('mouseenter', () => {
+    serviceInfo.textContent = item.dataset.info;
+  });
+
+  item.addEventListener('mouseleave', () => {
+    serviceInfo.textContent = "Hover over a service to learn more";
+  });
+
 });

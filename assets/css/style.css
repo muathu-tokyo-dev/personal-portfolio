@@ -517,9 +517,6 @@ hr {
 .service-item-front {
     transition: all 0.3s ease;
 }
-.service-item-front:hover {
-    opacity: 0;
-}
 
 .service-info-display {
     margin: 2.5rem;

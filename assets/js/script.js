@@ -103,25 +103,30 @@ if (track) {
 const serviceInfo = document.getElementById('service-info');
 
 if (serviceInfo) {
+  const serviceInfoDesc = document.getElementById('service-info-desc');
   const serviceItems = document.querySelectorAll('.service-item');
   serviceInfo.innerHTML = `<h2>Hover over a service to learn more</h2>`;
   
-  /* For desktop */
+  /* Info display handling */
   serviceItems.forEach(item => {
   
+    /* desktop */
     item.addEventListener('mouseenter', () => {
       serviceInfo.innerHTML = `<h2>${item.dataset.info}</h2>`;
-    });
-
-    item.addEventListener('touchstart', () => {
-      serviceInfo.innerHTML = `<h2>${item.dataset.info}</h2>`;
+      serviceInfoDesc.innerHTML = `<h4>${item.dataset.desc}</h4>`
     });
   
     item.addEventListener('mouseleave', () => {
       serviceInfo.innerHTML = `<h2>Hover over a service to learn more</h2>`;
+      serviceInfoDesc.innerHTML = `. . .`;
     });
 
-    
+    /* mobile */
+    item.addEventListener('touchstart', () => {
+      serviceInfo.innerHTML = `<h2>${item.dataset.info}</h2>`;
+      serviceInfoDesc.innerHTML = `<h4>${item.dataset.desc}</h4>`;
+    });
+
   
   });
 }

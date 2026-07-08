@@ -34,14 +34,20 @@ p {
 .blog-item {
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    gap: 10px;
+    width: 100vw;
+    gap: 20px;
 }
 
 .blog-item img {
     width: 100%;
+    height: 30vh;
     border: 2px solid #fff;
     border-radius: 30px;
+}
+
+.blog-item p {
+    margin-top: -15px;
+    color: #ffffff86;
 }
 
 .blog-badge-display {
@@ -52,7 +58,8 @@ p {
 .blog-badge-item {
     border: 1px solid #fff;
     border-radius: 30px;
-    padding: 0.25rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 
@@ -66,5 +73,23 @@ p {
     .blog-display {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-badge-item:hover {
+        color: #000;
+        background-color: #04f03f;
+    }
+
+    .blog-item {
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        width: 30vw;
+    }
+
+    .blog-item:hover {
+        transform: scale(1.03);
+    }
+
+    .link:hover {
+        text-decoration: underline;
     }
 }

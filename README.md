@@ -27,17 +27,17 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
 <p align="center">
   <div align="center">
     <h3>❮ H O M E ❯</h3>
-    <img width="1920" height="1080" alt="Screen Shot 2026-06-26 at 14 20 49" src="https://github.com/user-attachments/assets/90a0792e-b186-43c5-a83c-f7e70a6f0867" />
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-11 at 23 06 01" src="https://github.com/user-attachments/assets/6e52dba0-7af2-4dcb-93bc-7a5554bf5d24" />
   </div>
 
   <div align="center">
     <h3>❮ A B O U T ❯</h3>
-    <img width="1920" height="1080" alt="Screen Shot 2026-06-30 at 21 49 05" src="https://github.com/user-attachments/assets/adeade24-6caa-4221-8fd9-1ce2394f9b06" />
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-11 at 23 06 53" src="https://github.com/user-attachments/assets/59b3695e-af91-4ee5-b9e1-7edb937d330f" />
   </div>
 
   <div align="center">
     <h3>❮ S E R V I C E ❯</h3>
-    <img width="1920" height="1080" alt="Screen Shot 2026-07-06 at 20 56 44" src="https://github.com/user-attachments/assets/b646d82b-a42f-4fc8-af69-bbb7b044a934" />
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-11 at 23 06 10" src="https://github.com/user-attachments/assets/c90699f7-b594-45fe-8e15-d9692ecdac00" />
   </div>
 
   <div align="center">

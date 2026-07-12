@@ -81,7 +81,7 @@ Before setting up this project, please download and install the following requir
 ## Installation 📦
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com
+git clone https://github.com/muathu-tokyo-dev/personal-portfolio.git
 ```
 
 2. Navigate into the project directory:

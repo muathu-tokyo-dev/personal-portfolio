@@ -40,6 +40,11 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
     <img width="1920" height="1080" alt="Screen Shot 2026-07-11 at 23 06 10" src="https://github.com/user-attachments/assets/c90699f7-b594-45fe-8e15-d9692ecdac00" />
   </div>
 
+<div align="center">
+    <h3>❮ P R O J E C T S ❯</h3>
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-13 at 23 24 05" src="https://github.com/user-attachments/assets/2454ed6e-9b51-43db-8e6e-43ade3193e58" />
+  </div>
+
   <div align="center">
     <h3>❮ B L O G ❯</h3>
     <img width="1920" height="1080" alt="Screen Shot 2026-07-08 at 22 01 16" src="https://github.com/user-attachments/assets/576ac4b9-abdf-468f-95b8-09f67f1bd083" />

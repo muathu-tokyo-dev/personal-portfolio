@@ -20,11 +20,9 @@
   </h4>
 </div>
 
-<div id="overview"></div>
 ## Overview 📝
 A responsive personal portfolio website built with **HTML5**, **CSS3** and **Vanilla JS**. Deployable on any devices from mobile to desktop, easy customization for UI/UX components.
 
-<div id="demo"></div>
 ## Demo 👀
 <p align="center">
   <div align="center">
@@ -61,13 +59,11 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
   ⬩➤ Live Demo: [<a href="https://muathu-tokyo-dev.github.io/personal-portfolio/">**CLICK HERE**</a>] 🔥
 </p>
 
-<div id="features"></div>
 ## Features 🚀
 <p>✅ User-Friendly Tech Stack: Built with HTML5, CSS and Vanilla JS</p>
 <p>✅ Fully Responsive: Optimized for all devices and screen sizes [Big screen is under maintained]</p>
 <p>✅ Easy Customization: Simple configuration</p>
 
-<div id="sections"></div>
 ## Sections 📚
 | Section | Description |
 | :--- | :--- |
@@ -78,7 +74,6 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
 | **Blog** | Sharing personal insights, articles, and updates |
 | **Contact** | Communication hub for clients to reach out |
 
-<div id="prerequisites"></div>
 ## Prerequisites 📥
 
 Before setting up this project, please download and install the following required tools:
@@ -88,7 +83,6 @@ Before setting up this project, please download and install the following requir
 *   **[Live Server Extension](https://visualstudio.com)**: A VS Code extension to preview your portfolio live with hot-reload support.
 *   **[Font Awesome](https://fontawesome.com)**: Essential web toolkit for icons 
 
-<div id="installation"></div>
 ## Installation 📦
 1. Clone the repository to your local machine:
 ```bash

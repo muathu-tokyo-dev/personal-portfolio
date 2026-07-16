@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/post.css">
+    <script src="./assets/js/script.js" defer></script>    
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <img src="./assets/images/loading-screen.gif" alt="">
+        <h1>BLOGS GETTING...</h1>
+    </div>
+
+    <nav class="navbar">
+        <img src="./assets/images/logo.png" alt="logo">
+
+        <input type="checkbox" class="menu-checkbox" id="menu-checkbox">
+
+        <label for="menu-checkbox" class="hamburger-btn">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+        </label>
+
+        <ul class="menu-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="post-header">
+            <div class="intro-section">
+                <div class="blog-badge-display">
+                    <div class="blog-badge-item">Learning</div>
+                    <div class="blog-badge-item">Python</div>
+                </div>
+                <p>July 16, 2026 | 1:00 PM</p>
+                <h4>Everything you need to know about Python</h4>
+                <p>Nowadays, every engineer must learn about programming. The most important programming language is Python.</p>
+            </div>
+            <div class="post-img">
+                <img src="./assets/images/blog-image/blog-1-img.webp" alt="blog-image-1">
+                <p>Photo illustration: Python Language</p>
+            </div>
+        </div><hr>
+
+        <div class="post-body">
+            <p><strong>Unlike C++ or Java</strong>, which require heavy boilerplate and strict structural rules, Python is practically executable pseudo-code. It forces you to write clean code by relying on indentation instead of curly braces. This means you spend less time fighting syntax errors and more time focusing on actual system logic and architecture.</p>
+            <p>Python’s true power doesn't come from the core language itself, but from its massive, open-source ecosystem. You rarely have to build things from scratch.</p>
+            <ul>
+                <p><strong>For Data & AI:</strong> TensorFlow, PyTorch, and Pandas turn complex mathematical computations into simple API calls.</p>
+                <p><strong>For Cybersecurity:</strong> Tools for penetration testing, network scanning, and payload generation are predominantly written in Python.</p>
+                <p><strong>For Backend:</strong> Frameworks like FastAPI and Django allow you to deploy RESTful APIs in a matter of minutes.</p>
+            </ul>
+        </div><hr>
+
+        <div class="post-footer">
+            <h5>You've finished reading this blog post</h5>
+            <a href="./blog.html" class="return-btn">Click here to return</a>
+        </div>
+    </div>
+
+</body>
+</html>

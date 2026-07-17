@@ -1,0 +1,30 @@
+/* Typography */
+h1 {
+    text-align: center;
+}
+
+/* Components */
+/* .container {
+
+} */
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

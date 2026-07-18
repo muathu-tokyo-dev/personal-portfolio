@@ -4,10 +4,7 @@ h1 {
 }
 
 /* Components */
-/* .container {
-
-} */
-
+/* Mobile */
 .project-gallery {
     display: flex;
     flex-direction: column;
@@ -24,6 +21,10 @@ h1 {
 
 /* Desktop */
 @media (min-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+
     .project-grid {
         grid-template-columns: repeat(3, 1fr);
     }

@@ -42,7 +42,8 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
 
 <div align="center">
     <h3>-❮ P R O J E C T S ❯-</h3>
-    <img width="1920" height="1080" alt="Screen Shot 2026-07-13 at 23 24 05" src="https://github.com/user-attachments/assets/2454ed6e-9b51-43db-8e6e-43ade3193e58" />
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-18 at 19 35 21" src="https://github.com/user-attachments/assets/e958287d-c265-4bd6-b3f4-c9457af05e91" />
+
   </div>
 
   <div align="center">
@@ -52,7 +53,7 @@ A responsive personal portfolio website built with **HTML5**, **CSS3** and **Van
   
   <div align="center">
     <h3>-❮ C O N T A C T ❯-</h3>
-    <img width="1920" height="1080" alt="Screen Shot 2026-06-28 at 11 41 20" src="https://github.com/user-attachments/assets/5dfbb172-a461-4767-97ea-6ede33224694" />
+    <img width="1920" height="1080" alt="Screen Shot 2026-07-18 at 19 35 00" src="https://github.com/user-attachments/assets/d5b2362b-835a-433f-94d5-8d0eb447ba1e" />
   </div>
   
   

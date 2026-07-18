@@ -205,7 +205,7 @@ hr {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 728px) {
 
     .container {
         margin-top: 10rem;

@@ -47,10 +47,11 @@
     border: 2px solid #fff;
     border-radius: 30px;
     color: #ffffff9d;
+    text-align: center;
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 728px) {
     .service-display {
         grid-template-columns: repeat(3, 1fr);
     }

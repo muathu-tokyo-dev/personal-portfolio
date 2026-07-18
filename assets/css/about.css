@@ -52,6 +52,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    justify-items: center;
 }
 .techstack-item {
     display: flex;
@@ -117,9 +118,15 @@
     color: #ffffff8c;
 }
 
+/* Ipad */
+@media (min-width: 728px) {
+    .techstack-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     .education-item:hover {
         border-left: 5px solid #ff0909;

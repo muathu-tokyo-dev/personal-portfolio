@@ -34,7 +34,7 @@ p {
 .blog-item {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 95vw;
     gap: 20px;
 }
 
@@ -63,9 +63,15 @@ p {
     transition: all 0.3s ease;
 }
 
+/* For Ipad */
+@media (min-width: 728px) {
+    .container {
+        margin-top: -10px;
+    }
+}
 
 /* For Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     .container {
         margin-top: -5px;
